@@ -1,20 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import { API_KEY } from "../constants.js";
 
 function Header(props) {
-  fetch(
-    "https://api.themoviedb.org/3/discover/movie?API_KEY=3bc84379c3185aadbf1b28c397e1a678&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1"
-  );
   return (
     <header className="header">
       <div className="header-logo">
-        <img className="logo" src={props.imgSrc} alt="" />
+        <Link to="/">
+          <img className="logo" src={props.imgSrc} alt="" />
+        </Link>
       </div>
-      <ul>
+      <ul className="header-menu">
         {props.menu.map(item => (
-          <li className="list-item" key={item}>
-            {item}
+          <li className="list-item" key={item.link}>
+            <Link to={item.link}>{item.title}</Link>
           </li>
         ))}
       </ul>

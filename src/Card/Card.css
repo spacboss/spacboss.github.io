@@ -1,9 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 .card {
-  color: yellow;
-  border: 2px dotted rgb(131, 158, 235);
-  border-width: 10px;
-  padding: 8px;
+  color: white;
+  background-color: #021c1e;
+  padding: 0;
+  display: block;
+  min-width: 0;
+  margin-top: 15px;
+}
+
+.card-img {
+  width: 330px;
+}
+
+.par {
+  color: white;
+  font-style: bold;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  max-height: 120px;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
+
+.button {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background-color: #66a5ad;
+  border-color: #66a5ad;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #021c1e;
+  color: white;
+  font-size: 20px;
+}
+.button-div {
   display: flex;
-  justify-content: center;
-  align-self: center;
+  justify-content: flex-start;
+}
+
+.genre {
+  display: flex;
+  font-size: 12px;
+}
+
+.genre-item {
+  padding: 5px 0px 5px 5px;
+}
+.card-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.text {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }

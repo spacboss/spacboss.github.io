@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-column: 2;
+  grid-template-columns: 1fr 1fr;
+}
+
+.button {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 5%;
+  padding: 5px;
+}
+
+.button:hover {
+  background-color: #4caf50;
+  border-radius: 12%;
+}
+
+.card-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.text {
+  padding: 10px;
+}
+
+.button-div {
+  display: flex;
+  justify-content: flex-end;
+}
